@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebVideoPlayer</title>
+    </head>
+    <body>
+        <div class="content">
+            <audio id="player" controls>
+                <source id="audiosource" src="">
+            </audio>
+        </div>
+        <input type="text" id="media" placeholder="Enter path to audio...">
+            <button type="button" onclick="playMedia()">Play</button>
+        </body>
+    </body>
+    <script>
+        function playMedia(){
+            var path = document.getElementById("media").value;
+            console.log(path);
+            document.getElementById("audiosource").setAttribute('src', "file://" + path);
+            document.getElementById("player").load();
+            document.getElementById("player").play();
+        }
+        
+    </script>
+    <style>
+        .content{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        body{
+            background-color: black;
+            color: white;
+
+        }
+    </style>
+</html>

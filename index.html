@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WebMediaPlayer</title>
+    </head>
+    <body>
+        <h1>WebMediaPlayer</h1>
+        <p>WebMediaPlayer is a <a href="https://maggieappleton.com/folk-interfaces">folk interface</a> media player suite that runs in your web browser. You can play any video or audio file that your browser supports straight from your local storage.</p>
+        <p>Choose what media you want to play.</p>
+        <button type="button" onclick="window.location.href = 'video.html';">Video</button>
+        <button type="button" onclick="window.location.href = 'music.html';">Music</button>
+    </body>
+    <style>
+        #player{
+            width:100%;
+            height: auto;
+            margin: 0 auto;
+        }
+        .content{
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        body{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</html>
